@@ -1,0 +1,39 @@
+<script>
+
+	function $(e){
+return document.getElementById(e);
+}
+	
+
+function abdc(){
+	
+		var sl=$('shuliang').value;
+
+		sl=parseInt(sl)+1;
+
+		$('shuliang').value=sl;
+
+		$('ccc').innerHTML=sl*150;
+
+	}
+
+
+	function abdce(){
+
+	var sl=$('shuliang').value;
+
+		if (sl>0){
+ sl=parseInt(sl)-1;
+}
+		
+		$('shuliang').value=sl;
+		
+		$('ccc').innerHTML=sl*150;
+}
+
+
+</script>
+	
+<a href="javascript:abdce();">-</a><input id="shuliang" value="1" /><a href="javascript:abdc();">+</a>
+<div id="ccc">0</div>
+
